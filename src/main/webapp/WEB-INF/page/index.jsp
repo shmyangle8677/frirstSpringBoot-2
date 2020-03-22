@@ -17,6 +17,14 @@
 				$("#t3").val(text+"---"+status);
 			});
 		});
+		$("#bt2").click(function(){
+			var url = "/str3";
+			$.post(url,function(text,status){
+				//var json=JSON.parse(text);
+				//$("#t4").val(text.name);
+				$("#t4").val(JSON.stringify(text));
+			});
+		});
 	});
 </script>
 <body>
@@ -25,8 +33,14 @@
 <br>
 年龄：<input type="text" id="t2" style="width: 200px"/>
 <input type="button" id="bt1" value="提交"/>
-<hr>
+<br>
 返回信息：<input type="text" id="t3" style="width: 200px"/>
+<hr>
+<input type="button" id="bt2" value="测试JOSN的返回"/>
+<br>
+返回信息:<input type="text" id="t4" style="width: 200px"/>
+<br>
+<a href="/str2">测试页面的跳转</a>
 </body>
 
 </html>

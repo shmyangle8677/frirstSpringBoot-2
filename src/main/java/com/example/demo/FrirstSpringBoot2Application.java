@@ -15,9 +15,9 @@ public class FrirstSpringBoot2Application extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(FrirstSpringBoot2Application.class, args);
 		
-		String address="http://localhost:8081/ws";
+		/*String address="http://localhost:8081/ws";
 		Endpoint.publish(address, new HelloImp());
-		System.out.println("ws 启动成功……");
+		System.out.println("ws 启动成功……");*/
 	}
 
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {

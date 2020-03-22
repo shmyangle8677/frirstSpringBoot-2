@@ -31,6 +31,7 @@
 	        </repository>  
 	</repositories>
 	<dependencies>
+	<!-- 核心包，集成SpringBoot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -41,7 +42,7 @@
 		        </exclusion>
 		    </exclusions> -->
 		</dependency>
-
+		<!-- 集成Junit测试 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -62,12 +63,16 @@
             <artifactId>tomcat-embed-jasper</artifactId>
             <scope>provided</scope>
         </dependency>
-<!--		<dependency>
+		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
             <scope>true</scope>
-		</dependency> -->
+		</dependency>
+		<dependency>
+           <groupId>org.projectlombok</groupId>
+           <artifactId>lombok</artifactId>
+       	</dependency>
 	</dependencies>
 
 	<build>
